@@ -1,0 +1,239 @@
+/*css general*/
+:root {
+    --redColor: #c80000;
+    --greyColor: #666;
+    --lightGrey: #ccc;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.body,
+.main {
+    display: inline-block;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headerH1,
+.headerMinLetter,
+.cardRedPanier {
+    background-color: var(--redColor);
+    color: #fff;
+    width: 100%
+}
+
+.headerH1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.headerMinLetter {
+    font-size: 0.9rem;
+    justify-content: center;
+}
+
+.headerH3,
+.headerEm {
+    background-color: var(--greyColor);
+    color: var(--lightGrey);
+    width: 100%
+}
+
+.headerH3 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.headerEm {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+footer {
+    background-color: var(--greyColor);
+    color: var(--lightGrey);
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+/*css index*/
+.mainSection {
+    width: 100%;
+
+}
+
+.card {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.3rem;
+    border: 0.1rem solid var(--lightGrey);
+    margin: 0.9rem;
+}
+
+.cardImg {
+    width: 100%;
+}
+
+.cardImgTitle {
+    text-transform: uppercase;
+    color: var(--lightGrey);
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 0.1rem solid var(--lightGrey);
+    line-height: 0.2rem;
+}
+
+.cardH2 {
+    margin: 0;
+    padding: 0.5rem;
+
+}
+
+.cardP {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.cardRedPanier {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.cardRedP {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.cardRedPrice {
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+
+/*css panier*/
+p {
+    margin: 0.2rem;
+}
+
+.panier {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.9rem;
+    margin-right: 0.9rem;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.panierH2 {
+    padding-left: 3rem;
+}
+
+.panierCorps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    color: var(--greyColor);
+    margin: 1rem;
+}
+
+.panierAdressOption,
+.panierForm {
+    width: 100%;
+    padding: 0.5rem 2.3rem 0.5rem 2.3rem;
+}
+
+input:placeholder-shown,
+textarea {
+    background-color: var(--lightGrey);
+    border-bottom: 0.1rem solid var(--greyColor);
+    height: 3rem;
+    width: 18rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.panierBottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.panierBottomDu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1rem 0.8rem 1.1rem 0.8rem;
+    margin: 0.4rem 4.2rem 0.4rem 4.2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0.5rem;
+}
+
+.panierBottomButton {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem;
+    border-top: 0.2rem solid var(--lightGrey);
+    border-bottom: 0.2rem solid var(--lightGrey);
+    margin: 0.6rem 3rem 0.6rem 3rem;
+}
+
+.line {
+    padding: 0.2rem;
+    border-top: 0.2rem solid var(--lightGrey);
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+.du {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.red {
+    font-size: 1.5rem;
+    color: var(--redColor);
+    font-weight: bold;
+    padding: 1.1rem;
+}
+
+.buyAgain {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--lightGrey);
+    margin: 0;
+    padding: 1.1rem;
+}
+
+button {
+    background-color: var(--redColor);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border: none;
+
+}

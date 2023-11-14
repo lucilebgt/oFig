@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oFig-Panier</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <p class="headerH1">oFig <span class="headerMinLetter">Figurines et statuettes</span></p>
+        <p class="headerH3">Votre panier <span class="headerEm">2 produits</span></p>
+    </header>
+    <main class="panier">
+        <h2 class="panierH2">Preference de livraison</h2>
+
+        <section class="panierCorps">
+            <div class="panierAdressOption">
+                <h3>Ou souhaitez vous etre livre ?</h3>
+                <p><!--my adress-->
+                    <input id="myAdress" type="radio" name="adress">
+                    <label for="myAdress">Mon adresse courante</label>
+                </p>
+                <p><!--other adress-->
+                    <input id="otherAdress" type="radio" name="adress">
+                    <label for="otherAdress">Autre Adresse</label>
+                </p>
+                <p><!--options-->
+                <h3>Options</h3>
+                <p>
+                    <input id="sms" type="checkbox" name="sms">
+                    <label for="sms">Suivi de livraison par sms (inclus)</label>
+                </p>
+                <p>
+                    <input id="rembourse" type="checkbox" name="rembourse">
+                    <label for="rembourse">Satisfait ou rembourse (+2 euros)</label>
+                </p>
+                <p>
+                    <input id="garantie" type="checkbox" name="garantie">
+                    <label for="garantie">Garantie 2 ans (+10 euros)</label>
+                </p>
+                </p>
+            </div>
+            <div class="panierForm" >
+                <p><!--form-->
+                <form action="index.html" method="get">
+                    <h3>Adresse</h3>
+
+                    <p><label for="rue">Rue</label></p>
+                    <p class="panierFormInput"><input id="rue" type="text" name="rue" placeholder=""></p>
+
+                    <p><label for="cp">Code Postal</label></p>
+                    <p class="panierFormInput"><input id="cp" type="number" name="cp" placeholder=""></p>
+
+
+                    <p><label for="ville">Ville</label></p>
+                    <p class="panierFormInput">
+                        <input id="ville" type="text" name="ville" placeholder=""</p>
+                    <h3>Informations complementaires</h3>
+
+                    <p><label for="infoComp">interphone,batiment,etc.</label></p>
+                    <p class="panierFormInput"><textarea name="infoComp" id="infoComp" cols="30" rows="3" placeholder=""></textarea></p>
+                </form>
+                </p>
+            </div>
+        </section>
+        <p class="line"></p>
+        <section class="panierBottom">
+            <div class="panierBottomDu"><!--a payer-->
+                
+                <p class="du">Montant a regler:</p>
+                <p class="red">197 €</p>
+            </div>
+            <div class="panierBottomButton"><!--button-->
+                <p class="buyAgain">Continuer vos achats</p>
+                <button>Valider et payer</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>oFig - toutes les images sont sous copyright SquareEnix</p>
+    </footer>
+</body>
+
+</html>
