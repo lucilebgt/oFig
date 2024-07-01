@@ -16,9 +16,12 @@ body {
     min-height: 100vh;
 }
 
-.body,
+/* .body, */
 .main {
-    display: inline-block;
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
@@ -76,13 +79,18 @@ footer {
 /*css index*/
 .mainSection {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .card {
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     padding: 0.3rem;
     border: 0.1rem solid var(--lightGrey);
